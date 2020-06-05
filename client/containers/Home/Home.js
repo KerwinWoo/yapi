@@ -23,9 +23,6 @@ const HomeGuest = () => (
         <Row>
           <Col span={24}>
             <div className="home-header">
-              <a href="#" className="item">
-                YAPI
-              </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
