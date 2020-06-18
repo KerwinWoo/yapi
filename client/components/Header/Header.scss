@@ -23,8 +23,6 @@
     line-height: .56rem;
     height: .56rem;
     width: 56px;
-    border-right: 1px solid #55616d;
-    border-left: 1px solid #55616d;
     background-color: inherit;
     transition: all .2s;
     &:hover{
@@ -45,7 +43,11 @@
       left: 0;
       top: 50%;
       left: 50%;
-      transform: translate(-16px,-17px);
+      transform: translate(-25px,-25px);
+      background: url('../../images/logo.png') no-repeat;
+      width: 50px;
+      height: 50px;
+      background-position: 3px center;
     }
     .ui-badge {
       position: absolute;

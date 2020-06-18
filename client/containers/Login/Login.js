@@ -21,7 +21,8 @@ const changeHeight = {
   state => {
     return {
       loginData: state.user,
-      isLDAP: state.user.isLDAP
+      isLDAP: state.user.isLDAP,
+      login: state.user.isLogin
     };
   },
   {
@@ -31,6 +32,7 @@ const changeHeight = {
 )
 @withRouter
 class Login extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -38,12 +40,19 @@ class Login extends Component {
     };
   }
 
+  componentWillMount() {
+    if (this.props.login) {
+      this.props.history.push('/group/261');
+    }
+  }
+
   static propTypes = {
     form: PropTypes.object,
     history: PropTypes.object,
     loginActions: PropTypes.func,
     loginLdapActions: PropTypes.func,
-    isLDAP: PropTypes.bool
+    isLDAP: PropTypes.bool,
+    login: PropTypes.bool
   };
 
   handleSubmit = e => {

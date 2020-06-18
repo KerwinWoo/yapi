@@ -141,25 +141,66 @@ class exportController extends baseController {
       let html = `<!DOCTYPE html>
       <html>
       <head>
-      <title>${curProject.name}</title>
+      <title>${curProject.name}接口文档</title>
       <meta charset="utf-8" />
       ${defaultTheme}
       </head>
       <body>
         <div class="m-header">
-          <a href="#" style="display: inherit;"><svg class="svg" width="32px" height="32px" viewBox="0 0 64 64" version="1.1"><title>Icon</title><desc>Created with Sketch.</desc><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1"><stop stop-color="#FFFFFF" offset="0%"></stop><stop stop-color="#F2F2F2" offset="100%"></stop></linearGradient><circle id="path-2" cx="31.9988602" cy="31.9988602" r="2.92886048"></circle><filter x="-85.4%" y="-68.3%" width="270.7%" height="270.7%" filterUnits="objectBoundingBox" id="filter-3"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.159703351 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix></filter></defs><g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="大屏幕"><g id="Icon"><circle id="Oval-1" fill="url(#linearGradient-1)" cx="32" cy="32" r="32"></circle><path d="M36.7078009,31.8054514 L36.7078009,51.7110548 C36.7078009,54.2844537 34.6258634,56.3695395 32.0579205,56.3695395 C29.4899777,56.3695395 27.4099998,54.0704461 27.4099998,51.7941246 L27.4099998,31.8061972 C27.4099998,29.528395 29.4909575,27.218453 32.0589004,27.230043 C34.6268432,27.241633 36.7078009,29.528395 36.7078009,31.8054514 Z" id="blue" fill="#2359F1" fill-rule="nonzero"></path><path d="M45.2586091,17.1026914 C45.2586091,17.1026914 45.5657231,34.0524383 45.2345291,37.01141 C44.9033351,39.9703817 43.1767091,41.6667796 40.6088126,41.6667796 C38.040916,41.6667796 35.9609757,39.3676862 35.9609757,37.0913646 L35.9609757,17.1034372 C35.9609757,14.825635 38.0418959,12.515693 40.6097924,12.527283 C43.177689,12.538873 45.2586091,14.825635 45.2586091,17.1026914 Z" id="green" fill="#57CF27" fill-rule="nonzero" transform="translate(40.674608, 27.097010) rotate(60.000000) translate(-40.674608, -27.097010) "></path><path d="M28.0410158,17.0465598 L28.0410158,36.9521632 C28.0410158,39.525562 25.9591158,41.6106479 23.3912193,41.6106479 C20.8233227,41.6106479 18.7433824,39.3115545 18.7433824,37.035233 L18.7433824,17.0473055 C18.7433824,14.7695034 20.8243026,12.4595614 23.3921991,12.4711513 C25.9600956,12.4827413 28.0410158,14.7695034 28.0410158,17.0465598 Z" id="red" fill="#FF561B" fill-rule="nonzero" transform="translate(23.392199, 27.040878) rotate(-60.000000) translate(-23.392199, -27.040878) "></path><g id="inner-round"><use fill="black" fill-opacity="1" filter="url(#filter-3)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#path-2"></use><use fill="#F7F7F7" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#path-2"></use></g></g></g></g></svg></a>
-          <a href="#"><h1 class="title">YAPI 接口文档</h1></a>
-          <div class="nav">
-            <a href="https://hellosean1025.github.io/yapi/">YApi</a>
-          </div>
+          <a href="#" style="display: inherit;"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="44px" viewBox="0 0 125 44" enable-background="new 0 0 125 44" xml:space="preserve">  <image id="image0" width="125" height="44" x="0" y="0"
+              href="data:image/png;base64,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
+          oiWZ20miH/Ek0o9+JJJEf5JIsmy0H6WBV3wJH/w+dY2Mjuio5wpZoY6vApgaJur/EeRhk0ahkipU
+          vEZJEWSCar9uSLzg7jzLARN9Ce+17XxLZkqcC7PHyl/kjO0It4QxXSznvR9pUrM1/ilp0Bz7hCHR
+          HJXpXTJYQJ5yFPhCyuUGR6OHyDI56Kh7wEEry1HjWk3qWkcpfwWZINGhURJ8ydMeQmi3FGilxV81
+          1zpkiw91khbW9G45oGkUWuR22o57QhKVxP4ojd/se8k8mLlMDXHudpL1vEk9kMF0HiDHUfIgddSE
+          +MwkW/U1MZr5rAWgOGhbM4ztpu93ABqZw79Va6LxxgfASwetdNFOJ1466KITL14u0EknXZznHF4u
+          8hD3K4tW6l9VZDCXmSEOiMs4Qrlj7ymq1AsoZ9ys3r1/SxqwkXmU85it7AJGc6VxmvM9DVRa+peR
+          yjH+yymOcVY9C0LjK4YDq1hOW/AHJZO4h7n81EbtCMe53YbfxUZqqXX1SVkqxaTRg4d9hhunsMPV
+          pGODLJazyTgRtL0j4yRPKk1v40RE9khl0B3zniyQqyN6FF42P/v9eg+11JLGbOaQ67AtbeBN1oVZ
+          5V/eCOud62SFfCgiIk2yTUREmqVCci51zKL/hf9a0odJzOMqOkmhhip6+z3DZYX/AXkDNGDbfHfe
+          AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTA2LTE4VDE3OjI4OjU4KzA4OjAwcIlPGgAAACV0RVh0
+          ZGF0ZTptb2RpZnkAMjAyMC0wNi0xOFQxNzoyODo1OCswODowMAHU96YAAAAgdEVYdHNvZnR3YXJl
+          AGh0dHBzOi8vaW1hZ2VtYWdpY2sub3JnvM8dnQAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdl
+          cwAxp/+7LwAAABd0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQANDSO1ssGAAAAF3RFWHRUaHVtYjo6
+          SW1hZ2U6OldpZHRoADEyNa48bWAAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZO
+          AAAAF3RFWHRUaHVtYjo6TVRpbWUAMTU5MjQ3MjUzOBPXBjMAAAASdEVYdFRodW1iOjpTaXplADMy
+          NTBCQtH8yxQAAABCdEVYdFRodW1iOjpVUkkAZmlsZTovLy90bXAvaW1hZ2VsYy9pbWd2aWV3Ml83
+          XzE1OTI0NzA4Nzc1NzE1NDA0XzczX1swXdKVCHgAAAAASUVORK5CYII=" ></image>
+          </svg>
+          </a>
+          <a href="#"><h1 class="title">${curProject.name}接口文档</h1></a>
         </div>
         <div class="g-doc">
           ${left}
           <div id="right" class="content-right">
           ${tp}
-            <footer class="m-footer">
-              <p>Build by <a href="https://ymfe.org/">YMFE</a>.</p>
-            </footer>
           </div>
         </div>
       </body>
@@ -174,7 +215,7 @@ class exportController extends baseController {
       let mdTemplate = ``;
       try {
         // 项目名称信息
-        mdTemplate += md.createProjectMarkdown(curProject, wikiData);
+        // mdTemplate += md.createProjectMarkdown(curProject, wikiData);
         // 分类信息
         mdTemplate += md.createClassMarkdown(curProject, list, isToc);
         return mdTemplate;
